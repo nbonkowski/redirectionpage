@@ -1,0 +1,11 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Back to Obsidian</title>
+<p>Returning to Obsidian… <a id="back">Tap here if nothing happens.</a></p>
+<script>
+  // Google sends ?code=…&state=… here; hand them to the Google Core plugin.
+  const target = 'obsidian://google-core-auth' + location.search;
+  document.getElementById('back').href = target;
+  location.href = target;
+</script>
